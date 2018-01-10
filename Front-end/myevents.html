@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>GoVolunteer</title>
+	<meta charset="UTF-8">
+	<meta name="GoVolunteer home page" content="GoVolunteer volunteer events">
+	<meta name="author" content="Rania Glass">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" href="./css/govolstyle.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="./js/myevents.js"></script>
+	<script src="./js/logOut.js"></script>
+	<script src="./js/myFunction.js"></script>
+
+</head>
+<style type="text/css">
+p.hidden {
+    overflow: hidden;
+    width: 100%;
+    height: 90px;
+}
+
+</style>
+
+<body>
+	<!-- Title row -->
+	<div class="topnav" id="myTopnav">
+		<div class="container">
+			<div id="main">
+		  		<a href="myevents.html"><font color="#28B463">Go</font><font color="#5DADE2">Volunteer</font></a>
+			</div>
+			<div id="navi">
+			  <a href="profileVol.html">Profile</a>
+			  <a href="browseevents.html">More Events</a>
+			  <a href="aboutVol.html">About</a>
+			  <a href="#" onclick="logOut()">Logout</a>
+			  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container">
+		<!-- Event Categories -->
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<h1>Your Events</h1>
+			</div>
+		</div>
+
+			
+		<!-- Your Events -->
+		<div class="row" id="find" style="display: none;">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<h5>You don't have any events right now. <a href="browseevents.html">Find More Events.</a></h5>
+			</div>
+		</div>
+					
+
+		<!-- Event Tiles -->
+		<div id = "events"style="display: none;">
+			<div class="row" id="contents">
+			</div>
+		</div>	
+	</div>
+
+</body>
+
+</html> 
